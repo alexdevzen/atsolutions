@@ -841,37 +841,22 @@
               <span class="pre">Formulario de Contacto</span>
               <h2 class="title">Conversemos</h2>
             </div>
-            <form id="contact" action="#" class="appoinment-form mt--40">
-              <div class="input-half-wrapper">
-                <div class="single-input">
-                  <input type="text" placeholder="Nombre" required />
-                </div>
-                <div class="single-input">
-                  <input type="email" placeholder="Email" required />
-                </div>
+
+            <!-- Contact form -->
+            <form id="contact-form" class="contact-form-contact" action="mailer.php" method="post">
+              <div class="name-email">
+                <input type="text" name="name" placeholder="Nombre" required="">
+                <input type="email" name="email" placeholder="Email" required="">
               </div>
-              <select>
-                <option data-display="Select">Seleccione empresa</option>
-                <option value="1">AT Solutions</option>
-                <option value="2">Catemito</option>
-                <option value="3">Inversiones ChileSur</option>
-                <option value="4">CatChile</option>
-              </select>
-              <div class="input-half-wrapper mt--25 mb--30">
-                <div class="single-input">
-                  <input placeholder="Seleccione Fecha" type="text" name="checkIn" id="datepicker" value=""
-                    class="calendar" required />
-                </div>
-                <div class="single-input">
-                  <input type="text" id="timepicker" placeholder="Seleccione Hora" />
-                </div>
-              </div>
-              <textarea class="form-control mb--30" id="message" name="message" placeholder="Escriba un mensaje"
-                required=""></textarea>
-              <button type="submit" class="rts-btn btn-primary">
-                ENVIAR MENSAJE
-              </button>
+              <input type="text" name="subject" placeholder="Asunto" required="">
+              <textarea placeholder="Escriba su mensaje" name="message" required=""></textarea>
+              <button type="submit" id="enviar-btn" class="rts-btn btn-primary">Enviar Mensaje</button>
             </form>
+            <div></div>
+            <br>
+            <!-- Messages from mailer -->
+            <div id="form-messages"></div>
+
           </div>
         </div>
       </div>
@@ -1118,6 +1103,9 @@
   <!-- swip image -->
   <script src="assets/js/plugins/swip-img.js"></script>
   <!-- header style two End -->
+  <script src="assets/js/form/message.js"></script>
+  <!-- disable button form -->
+  <script src="assets/js/form/disable_form.js"></script>
 </body>
 
 </html>
