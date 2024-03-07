@@ -856,10 +856,13 @@
             <form id="contact-form" class="contact-form-contact" action="mailer.php" method="post">
               <div class="name-email">
                 <input type="text" name="name" placeholder="Nombre" required="">
-                <input type="email" name="email" placeholder="Email" required="">
+                <input type="text" name="phone" placeholder="Teléfono" required="">
               </div>
-              <input type="text" name="subject" placeholder="Asunto" required="">
-              <textarea placeholder="Escriba su mensaje" name="message" required=""></textarea>
+              <div class="name-email">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="text" name="city" placeholder="Ciudad" required="">
+              </div>
+              <textarea placeholder="Escriba su requerimiento" name="message" required=""></textarea>
               <button type="submit" id="enviar-btn" class="rts-btn btn-primary">Enviar Mensaje</button>
             </form>
             <div></div>
