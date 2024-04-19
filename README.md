@@ -27,3 +27,7 @@ The website is static and can be viewed by simply opening the `index.html` file 
 - [Unicons](https://iconscout.com/unicons) - Icon set used.
 - [MetisMenu](https://github.com/nkoechel/metisMenu) - Menu plugin used.
 - [Timepickers.min.css](https://timepicker.co/) - Timepicker stylesheet used.
+
+  ## License
+
+This project is licensed under the [MIT License](LICENSE).
